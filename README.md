@@ -3,7 +3,7 @@ DomCloud
 
 Build a program to recursively traverse the DOM and create a word cloud of most common attributes and elements to create a tag cloud.
 
-**index.html** contains sample html, you will be parsing this as your sample dom tree, and this is your main JavaScript launcher.  
+**index.html** contains sample html, you will be parsing this as your sample dom tree, and this is your main JavaScript launcher. Make sure to commit early, commit often.  
 
 ## Part 1
   
