@@ -3,7 +3,8 @@ var firstChild = document.documentElement;
 function counter (child) {
   child = child.firstElementChild;
   while (child) {
-    var childName = child.nodeName;
+    var childName = child.tagName;
+    // changed to 'tagName' from 'nodeName' to pool #text & #comment into undefined.
     if (counterObj[childName]) {
       counterObj[childName]++;
     } else {
@@ -22,5 +23,8 @@ function counter (child) {
     counter(child);
     child = child.nextSibling;
   }
+  delete counterObj.undefined;
   return counterObj;
 }
+
+counter(firstChild);
